@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Jadwal Petualangan Jemmy</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background-image: url('https://i.ibb.co/SdZgqfP/pixel-bg.png');
+      background-size: cover;
+      background-attachment: fixed;
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      background: rgba(0,0,0,0.6);
+      padding: 10px;
+      border: 2px solid #fff;
+      box-shadow: 2px 2px 0 #000;
+      margin-top: 30px;
+    }
+
+    table, .daily-schedule {
+      background: rgba(0,0,0,0.7);
+      border: 2px solid #fff;
+      box-shadow: 3px 3px 0 #000;
+      margin: 20px auto;
+      width: 90%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #fff;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #222;
+    }
+
+    td[contenteditable] {
+      background-color: #111;
+      outline: none;
+    }
+
+    .time-block {
+      padding: 10px;
+      border-bottom: 1px solid #888;
+    }
+
+    .time-block[contenteditable] {
+      background-color: #111;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    button {
+      font-family: 'Press Start 2P', cursive;
+      background: #222;
+      color: #fff;
+      border: 2px solid #fff;
+      padding: 10px 20px;
+      cursor: pointer;
+      box-shadow: 2px 2px 0 #000;
+    }
+
+    button:hover {
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎮 Jadwal Petualangan Harian Jemmy 🎮</h1>
+
+  <h2>📅 Jadwal Sekolah Mingguan</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Hari</th>
+        <th>Mata Pelajaran</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td contenteditable="true">Senin</td>
+        <td contenteditable="true">Matematika Wajib, Mulok, Bahasa Inggris TL, Sejarah</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">Selasa</td>
+        <td contenteditable="true">PJOK, Bahasa Inggris TL, Fisika, Agama, Kimia</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">Rabu</td>
+        <td contenteditable="true">Kimia, Bahasa Inggris Wajib, Bahasa Indonesia, PPKN, PKWU, Kimia</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">Kamis</td>
+        <td contenteditable="true">Matematika Wajib, Fisika, Seni Musik, Bahasa Indonesia, Matematika TL</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">Jumat</td>
+        <td contenteditable="true">Matematika TL, Agama, Bahasa Inggris TL, Bahasa Inggris Wajib</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>🕒 Jadwal Harian</h2>
+  <div class="daily-schedule">
+    <div class="time-block" contenteditable="true">04:30 - Bangun tidur</div>
+    <div class="time-block" contenteditable="true">04:45 - Mandi & cuci muka</div>
+    <div class="time-block" contenteditable="true">05:00 - Belajar pagi (Matematika)</div>
+    <div class="time-block" contenteditable="true">06:00 - Sarapan</div>
+    <div class="time-block" contenteditable="true">06:30 - Berangkat sekolah</div>
+    <div class="time-block" contenteditable="true">13:00 - Pulang sekolah & istirahat</div>
+    <div class="time-block" contenteditable="true">15:00 - Belajar (Fisika)</div>
+    <div class="time-block" contenteditable="true">17:00 - Main game / santai</div>
+    <div class="time-block" contenteditable="true">19:00 - Makan malam</div>
+    <div class="time-block" contenteditable="true">20:00 - Review pelajaran</div>
+    <div class="time-block" contenteditable="true">21:00 - Tidur</div>
+  </div>
+
+  <div class="button-container">
+    <button onclick="window.print()">🖨️ Cetak / Simpan PDF</button>
+  </div>
+
+</body>
+</html>
+
